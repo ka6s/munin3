@@ -63,6 +63,7 @@ F 0 "R8" H 2520 1696 50  0000 L CNN
 F 1 "100/1W" H 2520 1605 50  0000 L CNN
 F 2 "Resistor_SMD:R_1812_4532Metric_Pad1.30x3.40mm_HandSolder" V 2380 1650 50  0001 C CNN
 F 3 "~" H 2450 1650 50  0001 C CNN
+F 4 " 667-ERJ-12NF1000U" H 2450 1650 50  0001 C CNN "Mouser Part Number"
 	1    2450 1650
 	1    0    0    -1  
 $EndComp
@@ -503,17 +504,6 @@ Wire Wire Line
 Connection ~ 7900 2150
 Wire Wire Line
 	7900 2150 8550 2150
-$Comp
-L Device:Transformer_1P_SS L3
-U 1 1 6165D7D3
-P 9300 1950
-F 0 "L3" H 9300 2331 50  0000 C CNN
-F 1 "Transformer_1P_SS" H 9300 2240 50  0000 C CNN
-F 2 "Transformer_THT:HF_Power_Xfmr" H 9300 1950 50  0001 C CNN
-F 3 "~" H 9300 1950 50  0001 C CNN
-	1    9300 1950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8550 1750 8900 1750
 Connection ~ 8550 1750
@@ -586,12 +576,7 @@ F 3 "~" H 9550 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9700 1950 9850 1950
-Wire Wire Line
-	9850 1950 9850 2300
-Wire Wire Line
 	9550 2300 9850 2300
-Connection ~ 9850 2300
 Wire Wire Line
 	9850 2300 9850 2350
 Wire Wire Line
@@ -600,8 +585,6 @@ Connection ~ 9550 2300
 Wire Wire Line
 	9000 2300 9250 2300
 Connection ~ 9250 2300
-Wire Wire Line
-	9000 2600 9150 2600
 Wire Wire Line
 	9250 2600 9300 2600
 Connection ~ 9250 2600
@@ -637,8 +620,6 @@ $EndComp
 Connection ~ 9750 2600
 Wire Wire Line
 	9750 2600 9850 2600
-Wire Wire Line
-	9150 2600 9250 2600
 $Comp
 L power:GND #PWR0108
 U 1 1 6167D425
@@ -1472,6 +1453,7 @@ F 0 "U2" H 8200 5200 50  0000 C CNN
 F 1 "LMC6482" H 8300 5000 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8150 5400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 8150 5400 50  0001 C CNN
+F 4 "511-LMC6482IST" H 8150 5400 50  0001 C CNN "Mouser Part Number"
 	1    8150 5400
 	1    0    0    -1  
 $EndComp
@@ -1806,4 +1788,24 @@ Wire Wire Line
 Connection ~ 9300 2900
 Wire Wire Line
 	8800 2900 9300 2900
+Wire Wire Line
+	9000 2600 9250 2600
+$Comp
+L Device:Transformer_1P_SS T?
+U 1 1 61AC9DBF
+P 9300 1950
+F 0 "T?" H 9300 2331 50  0000 C CNN
+F 1 "Transformer_1P_SS" H 9300 2240 50  0000 C CNN
+F 2 "" H 9300 1950 50  0001 C CNN
+F 3 "~" H 9300 1950 50  0001 C CNN
+	1    9300 1950
+	-1   0    0    -1  
+$EndComp
+Connection ~ 9000 2300
+Wire Wire Line
+	8900 1950 8800 1950
+Wire Wire Line
+	8800 1950 8800 2300
+Wire Wire Line
+	8800 2300 9000 2300
 $EndSCHEMATC

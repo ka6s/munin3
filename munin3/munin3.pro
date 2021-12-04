@@ -1,4 +1,4 @@
-update=Sun 31 Oct 2021 12:41:06 PM PDT
+update=Thu 02 Dec 2021 09:13:13 AM PST
 version=1
 last_client=kicad
 [general]
@@ -92,6 +92,17 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/3]
+Name=OUTPUT
+Clearance=0.2
+TrackWidth=5
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/4]
 Name=RFPower
 Clearance=0.2
 TrackWidth=2

@@ -504,17 +504,6 @@ Wire Wire Line
 Connection ~ 7900 2150
 Wire Wire Line
 	7900 2150 8550 2150
-$Comp
-L Device:Transformer_1P_SS L3
-U 1 1 6165D7D3
-P 9300 1950
-F 0 "L3" H 9300 2331 50  0000 C CNN
-F 1 "Transformer_1P_SS" H 9300 2240 50  0000 C CNN
-F 2 "Transformer_THT:HF_Power_Xfmr" H 9300 1950 50  0001 C CNN
-F 3 "~" H 9300 1950 50  0001 C CNN
-	1    9300 1950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8550 1750 8900 1750
 Connection ~ 8550 1750
@@ -587,12 +576,7 @@ F 3 "~" H 9550 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9700 1950 9850 1950
-Wire Wire Line
-	9850 1950 9850 2300
-Wire Wire Line
 	9550 2300 9850 2300
-Connection ~ 9850 2300
 Wire Wire Line
 	9850 2300 9850 2350
 Wire Wire Line
@@ -601,8 +585,6 @@ Connection ~ 9550 2300
 Wire Wire Line
 	9000 2300 9250 2300
 Connection ~ 9250 2300
-Wire Wire Line
-	9000 2600 9150 2600
 Wire Wire Line
 	9250 2600 9300 2600
 Connection ~ 9250 2600
@@ -638,8 +620,6 @@ $EndComp
 Connection ~ 9750 2600
 Wire Wire Line
 	9750 2600 9850 2600
-Wire Wire Line
-	9150 2600 9250 2600
 $Comp
 L power:GND #PWR0108
 U 1 1 6167D425
@@ -1808,4 +1788,24 @@ Wire Wire Line
 Connection ~ 9300 2900
 Wire Wire Line
 	8800 2900 9300 2900
+Wire Wire Line
+	9000 2600 9250 2600
+$Comp
+L Device:Transformer_1P_SS T?
+U 1 1 61AC9DBF
+P 9300 1950
+F 0 "T?" H 9300 2331 50  0000 C CNN
+F 1 "Transformer_1P_SS" H 9300 2240 50  0000 C CNN
+F 2 "" H 9300 1950 50  0001 C CNN
+F 3 "~" H 9300 1950 50  0001 C CNN
+	1    9300 1950
+	-1   0    0    -1  
+$EndComp
+Connection ~ 9000 2300
+Wire Wire Line
+	8900 1950 8800 1950
+Wire Wire Line
+	8800 1950 8800 2300
+Wire Wire Line
+	8800 2300 9000 2300
 $EndSCHEMATC
