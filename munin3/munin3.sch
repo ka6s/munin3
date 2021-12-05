@@ -168,12 +168,8 @@ F 3 "" H 3750 1700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3100 1000 3100 1300
-Connection ~ 3100 1850
 Wire Wire Line
 	3100 1850 3100 2050
-Connection ~ 3100 1400
-Wire Wire Line
-	3100 1400 3100 1850
 Wire Wire Line
 	3350 1300 3100 1300
 Connection ~ 3100 1300
@@ -1791,12 +1787,12 @@ Wire Wire Line
 Wire Wire Line
 	9000 2600 9250 2600
 $Comp
-L Device:Transformer_1P_SS T?
+L Device:Transformer_1P_SS L3
 U 1 1 61AC9DBF
 P 9300 1950
-F 0 "T?" H 9300 2331 50  0000 C CNN
-F 1 "Transformer_1P_SS" H 9300 2240 50  0000 C CNN
-F 2 "" H 9300 1950 50  0001 C CNN
+F 0 "L3" H 9300 2331 50  0000 C CNN
+F 1 "Transformer_1P_SS" H 8800 2250 50  0000 C CNN
+F 2 "Transformer_THT:HF_Power_Xfmr" H 9300 1950 50  0001 C CNN
 F 3 "~" H 9300 1950 50  0001 C CNN
 	1    9300 1950
 	-1   0    0    -1  
