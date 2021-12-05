@@ -9,6 +9,8 @@ transformer.  Kicad didn't really do what I expected. I had to beef up these con
 found a couple errors in my schematic, and I found another later.. these issues have all been 
 fixed.
 
-I have NOT verified that the amp operates though - stay tuned.
+The amplifier seems to work! 
+
+Use the files in gerbers/munin3_v1.1.zip
 
 Steve KA6S
